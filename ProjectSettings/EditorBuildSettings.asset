@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CenaInicial.unity
+    guid: 3a609e1a3573ab041ae2a7089ef3be29
+  - enabled: 1
+    path: Assets/Scenes/CenaIntroducao.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CenaSavana.unity
+    guid: 617942e94faad1347a999b5a420c3e95
+  - enabled: 1
+    path: Assets/Scenes/CenaSelva.unity
+    guid: 59dfc63c488b98346858c68a250bc24c
+  - enabled: 1
+    path: Assets/Scenes/CenaCreditos.unity
+    guid: 375cb1d81cdf6c94abd2c952bdeb2477
+  m_configObjects: {}
