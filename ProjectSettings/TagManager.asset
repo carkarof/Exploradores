@@ -6,6 +6,7 @@ TagManager:
   tags:
   - noChao
   - animal
+  - portal
   layers:
   - Default
   - TransparentFX

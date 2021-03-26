@@ -6,18 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CenaInicial.unity
+    path: Assets/Cenas/CenaInicial.unity
     guid: 3a609e1a3573ab041ae2a7089ef3be29
   - enabled: 1
-    path: Assets/Scenes/CenaIntroducao.unity
+    path: Assets/Cenas/CenaIntroducao.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/CenaSavana.unity
+    path: Assets/Cenas/CenaSavana.unity
     guid: 617942e94faad1347a999b5a420c3e95
   - enabled: 1
-    path: Assets/Scenes/CenaSelva.unity
+    path: Assets/Cenas/CenaSelva.unity
     guid: 59dfc63c488b98346858c68a250bc24c
   - enabled: 1
-    path: Assets/Scenes/CenaCreditos.unity
-    guid: 375cb1d81cdf6c94abd2c952bdeb2477
+    path: Assets/Cenas/CenaSelva Desviados.unity
+    guid: 40ca49dc86dab0f46b27e349819960b0
+  - enabled: 1
+    path: Assets/Cenas/CenaCreditos Feliz.unity
+    guid: 46bade7343727fb4bba775c7375c7cfa
+  - enabled: 1
+    path: Assets/Cenas/CenaCreditos.unity
+    guid: a068b1aaee0ceef43bbb7779952aa292
   m_configObjects: {}

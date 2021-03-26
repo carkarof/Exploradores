@@ -7,6 +7,8 @@ public class GeradorVoadores : MonoBehaviour
     public GameObject animal;
     public float contadorTempo = 0;
     public float tempoLimite = 0;
+    public float tempoLimiteA = 0;
+    public float tempoLimiteB = 0;
 
 
     // Start is called before the first frame update
@@ -18,7 +20,7 @@ public class GeradorVoadores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        tempoLimite = Random.Range(2.0f, 80.0f);
+        tempoLimite = Random.Range(tempoLimiteA, tempoLimiteB);
 
 
         contadorTempo += Time.deltaTime;

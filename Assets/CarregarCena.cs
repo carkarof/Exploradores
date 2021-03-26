@@ -10,5 +10,6 @@ public class CarregarCena : MonoBehaviour
         SceneManager.LoadScene(cena);
         
     }
+    
 
 }

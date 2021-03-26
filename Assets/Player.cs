@@ -10,9 +10,10 @@ public class Player : MonoBehaviour
     public Rigidbody2D _rigid2d;
     public GameObject player;
     public GameObject animal;
-    public int pontuacao;
+    public int pontuacao;          
     public Animator Animador;
-    public Text textoPontuacao;
+    public Text textoPontuacao;       
+    public Text textoPontuacaoDesviados;       
     public float tAtaque;
     public float tSemAtaque;
     public GameObject TxtGameOver;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
     public AudioSource sfxBackground;
     public AudioSource sfxGameOver;
     public string cena;
+    
 
 
 
@@ -42,20 +44,20 @@ public class Player : MonoBehaviour
 
         if (cena == "CenaSavana")
         {
-            if (pontuacao == 20)
+            if (pontuacao == 15  )
             {
                 SceneManager.LoadScene("CenaSelva");
             }
-        }else if(cena == "CenaSelva")
+        }else if(cena == "CenaSelva" )
         {
-            if(pontuacao >= 30)
+            if(pontuacao == 15 && textoPontuacaoDesviados.text != "0" || 
+                pontuacao == 15 && textoPontuacaoDesviados.text == "0")
             {
                 SceneManager.LoadScene("CenaCreditos");
             }
         }
-         
 
-
+       
         if (Vivo == false)
         {
             Debug.Log(Vivo);

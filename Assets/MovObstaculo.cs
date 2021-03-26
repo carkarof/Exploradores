@@ -7,13 +7,12 @@ public class MovObstaculo : MonoBehaviour
 {
     public float vel;
     public GameObject animal;
-
-
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        
+     
         //pontuacao = 0;
     }
 
@@ -21,10 +20,6 @@ public class MovObstaculo : MonoBehaviour
     void Update()
     {
 
-        if (transform.position.x < -14f)
-        {
-            Destroy(this.gameObject);
-        }
 
         //if (inimigo.transform.position.x < -7.0f)
         //{
@@ -32,8 +27,9 @@ public class MovObstaculo : MonoBehaviour
         //pontuacao++;
         //textoPontuacao.text = pontuacao.ToString();
         //}
+               
 
-        transform.Translate(vel * Time.deltaTime * Vector2.left);
+        transform.Translate(vel * Time.deltaTime * Vector2.left );
     }
 
 
@@ -42,6 +38,16 @@ public class MovObstaculo : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+
+        if (collision.gameObject.tag == "portal")
+        {                        
             Destroy(this.gameObject);
         }
     }
